@@ -1,0 +1,50 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b1a49;
+  color: gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 48px;
+  margin: 20px;
+}
+.board {
+  width: 360px;
+  height: 360px;
+  background: url('assets/board.png') no-repeat center/contain;
+  position: relative;
+}
+.dice {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: url('assets/dice.png') no-repeat center/contain;
+  cursor: pointer;
+}
+.pawn {
+  width: 30px;
+  height: 30px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.sound-button {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: #222;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

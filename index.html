@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Royal Ludo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>👑 Royal Ludo</h1>
+  <div class="board" id="board">
+    <div class="pawn" id="pawn" style="top: 150px; left: 150px;"></div>
+    <div class="dice" onclick="rollDice()"></div>
+    <div class="sound-button" onclick="toggleSound()">🔊 Sound</div>
+  </div>
+  <audio id="diceSound" src="sounds/dice-roll.wav"></audio>
+  <audio id="moveSound" src="sounds/pawn-move.wav"></audio>
+  <audio id="winSound" src="sounds/win-sound.mp3"></audio>
+  <audio id="bgMusic" src="sounds/bg-music.mp3" loop autoplay></audio>
+  <script src="script.js"></script>
+</body>
+</html>
